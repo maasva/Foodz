@@ -64,14 +64,16 @@
     <div class="container">
         <div class="row cardRow" id="cardRow">
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" id="latestCard">
+              {% for invitation in invitations %}
                 <div id="invitationCard" class="card invitationCard">
                     <div class="card-image"><i class="glyphicon glyphicon-user" style="font-size:142px;margin:0px;margin-top:33px;margin-bottom:14px;padding:0px;"></i></div>
                     <div class="card-content">
-                        <p class="text-center cardName" id="cardName">Cathy McWay</p>
+                        <p class="text-center cardName" id="cardName">{{invitation.name}}</p>
                     </div>
-                    <div class="card-action"><i class="fa fa-clock-o"></i><a id="cardDateTime" class="cardDateTime">17:30 </a><i class="icon ion-android-people"></i><a id="cardNoPeople" class="cardNoPeople">2/5 </a><i class="icon ion-android-restaurant"></i><a id="cardCuisine"
-                        class="cardCuisine">iTALIAN </a><i class="fa fa-money"></i><a id="cardCost" class="cardCost">€5.20 </a></div>
+                    <div class="card-action"><i class="fa fa-clock-o"></i><a id="cardDateTime" class="cardDateTime">{{invitation.date_time}} </a><i class="icon ion-android-people"></i><a id="cardNoPeople" class="cardNoPeople">{{invitation.currentPeople}} / {{invitation.maxPeople}} </a><i class="icon ion-android-restaurant"></i><a id="cardCuisine"
+                        class="cardCuisine">{{invitation.cuisine}} </a><i class="fa fa-money"></i><a id="cardCost" class="cardCost">€ {{invitaions.costs}} </a></div>
                 </div>
+                {% endfor %}
             </div>
         </div>
     </div>
