@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodz</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="assets/css/DashBoard-light-boostrap1.css">
+    <link rel="stylesheet" href="assets/css/DashBoard-light-boostrap2.css">
+    <link rel="stylesheet" href="assets/css/DashBoard-light-boostrap4.css">
+    <link rel="stylesheet" href="assets/css/DashBoard-light-boostrap3.css">
+    <link rel="stylesheet" href="assets/css/DashBoard-light-boostrap.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Material-Card.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button1.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Footer-1.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Footer.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Header.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo-1.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="background-color:#37434d;color:rgb(96,144,238);">
+    <nav class="navbar navbar-default" style="margin-bottom:0px;">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand" href="index.html">Foodz </a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1" style="font-size:31px;"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <button class="btn btn-default navbar-btn navbar-right plusButton" type="button" id="plusButton"><i class="glyphicon glyphicon-plus-sign" style="font-size:46px;margin:-3px;padding:0px;color:#339e35;"></i></button>
+                <ul class="nav navbar-nav navbar-right"></ul>
+            </div>
+        </div>
+    </nav>
+    <div id="cardCreator" class="register-photo cardCreator">
+        <div class="form-container">
+            <form method="post">
+                <h2 class="text-center creatorHeading" id="creatorHeading"><strong>Create</strong> an invitation</h2>
+                <div class="form-group">
+                    <input class="form-control dateTime" type="datetime-local" name="dateTime" id="dateTime" style="color:#e3e3e3;">
+                </div>
+                <div class="form-group">
+                    <input class="form-control noPeople" type="number" name="numbOfPeople" placeholder="Number of People" id="noPeople">
+                </div>
+                <div class="form-group">
+                    <input class="form-control cuisine" type="text" name="cuisine" placeholder="Cuisine" id="cuisine">
+                </div>
+                <div class="form-group">
+                    <input class="form-control cost" type="number" name="cost" placeholder="Cost in euro's" id="cost">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block createButton" type="button" style="color:rgb(255,255,255);">Create </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row cardRow" id="cardRow">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" id="latestCard">
+                <div id="invitationCard" class="card invitationCard">
+                    <div class="card-image"><i class="glyphicon glyphicon-user" style="font-size:142px;margin:0px;margin-top:33px;margin-bottom:14px;padding:0px;"></i></div>
+                    <div class="card-content">
+                        <p class="text-center cardName" id="cardName">Cathy McWay</p>
+                    </div>
+                    <div class="card-action"><i class="fa fa-clock-o"></i><a id="cardDateTime" class="cardDateTime">17:30 </a><i class="icon ion-android-people"></i><a id="cardNoPeople" class="cardNoPeople">2/5 </a><i class="icon ion-android-restaurant"></i><a id="cardCuisine"
+                        class="cardCuisine">iTALIAN </a><i class="fa fa-money"></i><a id="cardCost" class="cardCost">€5.20 </a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/DashBoard-light-boostrap2.js"></script>
+    <script src="assets/js/DashBoard-light-boostrap.js"></script>
+    <script src="assets/js/DashBoard-light-boostrap1.js"></script>
+    <script src="assets/js/DashBoard-light-boostrap4.js"></script>
+    <script src="assets/js/DashBoard-light-boostrap3.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/loginPage.js"></script>
+</body>
+
+</html>
