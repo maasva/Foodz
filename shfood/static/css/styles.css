@@ -1,0 +1,53 @@
+body {
+  font-family:Arial ,Helvetica, sans-serif;
+}
+
+#promo {
+  text-align:center;
+  padding:40px;
+  background:url(../../assets/img/Chicken-Burger2.jpg) no-repeat;
+  background-size:cover;
+  margin:65px;
+  border-radius:30px;
+}
+
+#promo .jumbotron {
+  border-radius:20px;
+  padding:40px;
+  background-color:rgba(255,255,255,0.75);
+  max-width:800px;
+  margin:0 auto;
+}
+
+@media (max-width: 991px) {
+  #promo .jumbotron {
+    padding:10px;
+  }
+}
+
+@media (max-width: 991px) {
+  #promo {
+    padding:10px;
+  }
+}
+
+.site-section {
+  text-align:center;
+  padding:10px 0 60px;
+}
+
+#index p {
+  max-width:800px;
+  font-size:20px;
+  margin:0 auto;
+}
+
+.site-section h1 {
+  font-weight:normal;
+  margin-bottom:30px;
+}
+
+.row {
+  margin:65px;
+}
+
